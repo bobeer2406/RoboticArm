@@ -2,6 +2,7 @@
 
 Servo szczypce;
 Servo nadgarstek;
+Servo test;
 
 void ruchSerwa(Servo &s) {
 
@@ -21,11 +22,13 @@ void ruchSerwa(Servo &s) {
 void setup() {
   szczypce.attach(9);
   nadgarstek.attach(10);
+  test.attach(11);
 }
 
 void loop() {
 
   ruchSerwa(szczypce);
   ruchSerwa(nadgarstek);
+  ruchSerwa(test);
 
 }
